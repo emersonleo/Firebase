@@ -5,10 +5,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -41,19 +41,31 @@ class HomeColumn extends StatelessWidget {
             ),
           ],
         ),
-        TextField(
-          decoration: InputDecoration(hintText: "Login"),
+        Row(
+          children: <Widget>[
+            TextField(
+              decoration: InputDecoration(hintText: "Login"),
+            ),
+          ],
         ),
-        TextField(
-          decoration: InputDecoration(hintText: "Senha"),
+        Row(
+          children: <Widget>[
+            TextField(
+              decoration: InputDecoration(hintText: "Senha"),
+            ),
+          ],
         ),
-        RaisedButton(
-          onPressed: () {},
-          child: Text("Acessar"),
-        ),
-        RaisedButton(
-          onPressed: () {},
-          child: Text("Cadastre-se"),
+        Row(
+          children: <Widget>[
+            RaisedButton(
+              onPressed: () {},
+              child: Text("Acessar"),
+            ),
+            RaisedButton(
+              onPressed: () {},
+              child: Text("Cadastre-se"),
+            ),
+          ],
         ),
       ],
     );
