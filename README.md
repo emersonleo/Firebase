@@ -1,2 +1,3 @@
-# Firebase
-Um crud em Java(android) para aprender mais sobre o Firebase
+# learnfirebase
+
+Um CRUD com o objetivo de entender um pouco mais sobre o flutter e o firebase
