@@ -43,15 +43,19 @@ class HomeColumn extends StatelessWidget {
         ),
         Row(
           children: <Widget>[
-            TextField(
-              decoration: InputDecoration(hintText: "Login"),
+            Expanded(
+              child: TextField(
+                decoration: InputDecoration(hintText: "Login"),
+              ),
             ),
           ],
         ),
         Row(
           children: <Widget>[
-            TextField(
-              decoration: InputDecoration(hintText: "Senha"),
+            Expanded(
+              child: TextField(
+                decoration: InputDecoration(hintText: "Senha"),
+              ),
             ),
           ],
         ),
