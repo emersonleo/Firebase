@@ -31,43 +31,36 @@ class HomeColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Row(
-          children: <Widget>[
-            Center(
-              child: Text(
-                "LEARN FIREBASE",
-                style: TextStyle(fontSize: 30),
-              ),
-            ),
-          ],
+        Center(
+          child: Text(
+            "LEARN FIREBASE",
+            style: TextStyle(fontSize: 30),
+          ),
+        ),
+        Container(
+          child: TextField(
+            decoration: InputDecoration(hintText: "Login"),
+          ),
+        ),
+        Container(
+          child: TextField(
+            decoration: InputDecoration(hintText: "Senha"),
+          ),
         ),
         Row(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Expanded(
-              child: TextField(
-                decoration: InputDecoration(hintText: "Login"),
+              child: RaisedButton(
+                onPressed: () {},
+                child: Text("Acessar"),
               ),
             ),
-          ],
-        ),
-        Row(
-          children: <Widget>[
             Expanded(
-              child: TextField(
-                decoration: InputDecoration(hintText: "Senha"),
+              child: RaisedButton(
+                onPressed: () {},
+                child: Text("Cadastre-se"),
               ),
-            ),
-          ],
-        ),
-        Row(
-          children: <Widget>[
-            RaisedButton(
-              onPressed: () {},
-              child: Text("Acessar"),
-            ),
-            RaisedButton(
-              onPressed: () {},
-              child: Text("Cadastre-se"),
             ),
           ],
         ),
