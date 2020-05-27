@@ -22,7 +22,14 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(), body: HomeColumn());
+    return Scaffold(
+        body: Center(
+      child: Container(
+        width: 250,
+        height: 250,
+        child: HomeColumn(),
+      ),
+    ));
   }
 }
 
@@ -50,13 +57,15 @@ class HomeColumn extends StatelessWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Expanded(
+            Container(
+              margin: EdgeInsets.all(10),
               child: RaisedButton(
                 onPressed: () {},
                 child: Text("Acessar"),
               ),
             ),
-            Expanded(
+            Container(
+              margin: EdgeInsets.all(10),
               child: RaisedButton(
                 onPressed: () {},
                 child: Text("Cadastre-se"),
