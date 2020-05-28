@@ -23,13 +23,14 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.blue[200],
         body: Center(
-      child: Container(
-        width: 250,
-        height: 250,
-        child: HomeColumn(),
-      ),
-    ));
+          child: Container(
+            width: 300,
+            height: 300,
+            child: HomeColumn(),
+          ),
+        ));
   }
 }
 
@@ -38,10 +39,15 @@ class HomeColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Center(
+        Container(
+          margin: EdgeInsets.all(10),
           child: Text(
             "LEARN FIREBASE",
-            style: TextStyle(fontSize: 30),
+            style: TextStyle(
+              wordSpacing: 2,
+              fontSize: 30,
+              color: Colors.white,
+            ),
           ),
         ),
         Container(
@@ -51,6 +57,7 @@ class HomeColumn extends StatelessWidget {
         ),
         Container(
           child: TextField(
+            obscureText: true,
             decoration: InputDecoration(hintText: "Senha"),
           ),
         ),
@@ -60,6 +67,7 @@ class HomeColumn extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(10),
               child: RaisedButton(
+                color: Colors.white,
                 onPressed: () {},
                 child: Text("Acessar"),
               ),
@@ -67,6 +75,7 @@ class HomeColumn extends StatelessWidget {
             Container(
               margin: EdgeInsets.all(10),
               child: RaisedButton(
+                color: Colors.white,
                 onPressed: () {},
                 child: Text("Cadastre-se"),
               ),
