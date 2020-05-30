@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'cadastro.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -76,7 +78,9 @@ class HomeColumn extends StatelessWidget {
               margin: EdgeInsets.all(10),
               child: RaisedButton(
                 color: Colors.white,
-                onPressed: () {},
+                onPressed: () {
+                  GoToCadastro(context);
+                },
                 child: Text("Cadastre-se"),
               ),
             ),
@@ -85,4 +89,9 @@ class HomeColumn extends StatelessWidget {
       ],
     );
   }
+}
+
+void GoToCadastro(BuildContext context) {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => TelaCadastro()));
 }
