@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
 import 'cadastro.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Login());
 }
 
-class MyApp extends StatelessWidget {
+class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

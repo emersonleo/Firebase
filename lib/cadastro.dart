@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "main.dart";
 
 class TelaCadastro extends StatelessWidget {
   @override
@@ -45,7 +46,9 @@ class CamposCadastro extends StatelessWidget {
                 child: RaisedButton(
                   color: Colors.white,
                   child: Text("Voltar"),
-                  onPressed: () {},
+                  onPressed: () {
+                    BackToLogin(context);
+                  },
                 ),
               ),
             ],
@@ -54,4 +57,8 @@ class CamposCadastro extends StatelessWidget {
       ),
     );
   }
+}
+
+void BackToLogin(BuildContext context) {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
 }
